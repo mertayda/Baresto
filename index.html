@@ -1,127 +1,473 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <div class="navbar-container">
-            <div class="logo">
-              <img src="assets/logo.png" alt="" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sacramento&display=swap"
+         rel="stylesheet"
+         />
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <nav>
+               <div class="navbar-container">
+                  <div class="logo">
+                     <img src="assets/logo.png" alt="" />
+                  </div>
+                  <button
+                     class="hamburger-menu-button"
+                     aria-label="Menüyü aç/kapat"
+                     aria-expanded="false"
+                     >
+                  &#9776;
+                  </button>
+                  <ul class="nav-menu">
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                     </li>
+                     <li class="logo-item">
+                        <img src="assets/logo.png" alt="" />
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Menu</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Booking</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                     </li>
+                  </ul>
+                  <!--Hamburger menu icon for mobile view */-->
+                  <ul class="nav-menu-mobile">
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Home</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Menu</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Booking</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">About</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Blog</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <div class="fullpage-carousel">
+         <div class="carousel-slides-wrapper">
+            <div class="carousel-slide">
+               <img src="assets/slide-1.jpg" alt="" />
+               <div class="slide-content">
+                  <h1>the Perfect <span class="taste">Blend</span></h1>
+                  <p>
+                     Prepare to be enchanted by the seductive allure of our coffee's
+                     aromatic taste, a sensory symphony that begins the moment you lift
+                     the cup to your lips.
+                  </p>
+                  <button>view Menu</button>
+               </div>
             </div>
-            <button
-              class="hamburger-menu-button"
-              aria-label="Menüyü aç/kapat"
-              aria-expanded="false"
-            >
-              &#9776;
-            </button>
-
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a class="nav-link" href="">Home</a>
-              </li>
-              <li class="logo-item">
-                <img src="assets/logo.png" alt="" />
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Booking</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
-              </li>
-            </ul>
-            <!--Hamburger menu icon for mobile view */-->
-            <ul class="nav-menu-mobile">
-              <li class="nav-item-mobile">
-                <a class="nav-link-mobile" href="">Home</a>
-              </li>
-
-              <li class="nav-item-mobile">
-                <a class="nav-link-mobile" href="">Menu</a>
-              </li>
-              <li class="nav-item-mobile">
-                <a class="nav-link-mobile" href="">Booking</a>
-              </li>
-
-              <li class="nav-item-mobile">
-                <a class="nav-link-mobile" href="">About</a>
-              </li>
-              <li class="nav-item-mobile">
-                <a class="nav-link-mobile" href="">Blog</a>
-              </li>
-              <li class="nav-item-mobile">
-                <a class="nav-link-mobile" href="">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+            <div class="carousel-slide">
+               <img src="assets/slide-2.jpg" alt="" />
+               <div class="slide-content">
+                  <h1>Aromatic <span class="taste">Taste</span></h1>
+                  <p>
+                     Prepare to be enchanted by the seductive allure of our coffee's
+                     aromatic taste, a sensory symphony that begins the moment you lift
+                     the cup to your lips.
+                  </p>
+                  <button>view Menu</button>
+               </div>
+            </div>
+         </div>
+         <button class="prev-btn" aria-label="Previous slide">
+         <i class="fa-solid fa-arrow-left"></i>
+         </button>
+         <button class="next-btn" aria-label="Next slide">
+         <i class="fa-solid fa-arrow-right"></i>
+         </button>
       </div>
-    </header>
+      <main>
+         <section class="our-story">
+            <div class="container">
+               <div class="row">
+                  <div class="col-6">
+                     <div class="our-story-text">
+                        <h1> <span class="discover-special">Discover</span><span class="discover-special-letter">our Story</span></h1>
+                        <p>
+                           In the heart of the bustling metropolis, where the rhythm of life pulses relentlessly, there exists a sanctuary hidden among the chaos—a place where time slows, and worries fade into the aroma of freshly ground coffee beans.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-6">
+                     <div class="our-story-img">
+                        <img src="assets/bg-1.jpg" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="special-tastes">
+            <div class="container">
+               <div class="row">
+                  <div class="col-4">
+                     <div class="row">
+                        <div class="col-12 special-tastes-item">
+                           <img src="assets/icon-1.png" alt="">
+                           <div>
+                              <h1>Aromatic Taste</h1>
+                              <p>
+                                 Rich, inviting, and utterly tantalizing, the aromatic taste of coffee is a sensory journey that begins with the first whiff.
+                              </p>
+                              <button>
+                              Read More
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4">
+                     <div class="row">
+                        <div class="col-12 special-tastes-item">
+                           <img src="assets/icon-2.png" alt="">
+                           <div>
+                              <h1>Delicious Foods</h1>
+                              <p>
+                                 From the first tantalizing aroma to the last lingering taste, our menu is a celebration of diverse cuisines and bold creativity.
+                              </p>
+                              <button>
+                              Read More
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-4">
+                     <div class="row">
+                        <div class="col-12 special-tastes-item-last">
+                           <img src="assets/icon-3.png" alt="">
+                           <div>
+                              <h1>Make Your Party</h1>
+                              <p>
+                                 Transforming our cozy café into the ultimate party destination, where friends gather, laughter flows, and memories are made.
+                              </p>
+                              <button>
+                              Read More
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="favourite-coffee">
+            <div class="container">
+               <h1 class="favourite-coffee-title">
+                  <span class="discover-special">Favorite</span> <span class="discover-special-letter">Coffee</span>
+               </h1>
+            </div>
+         </section>
+         <section class="favourite-menu">
+            <div class="container">
+               <div class="favourite-menu-container">
+                  <div class="favorite-title">
+                     <h1 class="special-font">Espresso</h1>
+                     <div>
+                        <h3>Medium</h3>
+                        <h3>Large</h3>
+                     </div>
+                  </div>
+                  <div class="favorite-item">
+                     <div class="favorite-name">
+                        <p>Espresso</p>
+                        <span>Espresso, where passion meets perfection.</span>
+                     </div>
+                     <div class="favorite-price">
+                        <p>2.50</p>
+                        <p>3.50</p>
+                     </div>
+                  </div>
+                  <div class="favorite-item">
+                     <div class="favorite-name">
+                        <p>Americano</p>
+                        <span>Rich espresso diluted with hot water for a smooth taste.</span>
+                     </div>
+                     <div class="favorite-price">
+                        <p>3.00</p>
+                        <p>4.00</p>
+                     </div>
+                  </div>
+                  <div class="favorite-item">
+                     <div class="favorite-name">
+                        <p>Cappuccino</p>
+                        <span>Perfect blend of espresso, steamed milk, and foam.</span>
+                     </div>
+                     <div class="favorite-price">
+                        <p>4.25</p>
+                        <p>5.25</p>
+                     </div>
+                  </div>
+                  <div class="favorite-item">
+                     <div class="favorite-name">
+                        <p>Latte</p>
+                        <span>Creamy espresso with steamed milk and light foam.</span>
+                     </div>
+                     <div class="favorite-price">
+                        <p>4.50</p>
+                        <p>5.50</p>
+                     </div>
+                  </div>
+                  <div class="favorite-item">
+                     <div class="favorite-name">
+                        <p>Macchiato</p>
+                        <span>Espresso marked with a dollop of foamed milk.</span>
+                     </div>
+                     <div class="favorite-price">
+                        <p>3.75</p>
+                        <p>4.75</p>
+                     </div>
+                  </div>
+                  <div class="favorite-item">
+                     <div class="favorite-name">
+                        <p>Mocha</p>
+                        <span>Decadent blend of espresso, chocolate, and steamed milk.</span>
+                     </div>
+                     <div class="favorite-price">
+                        <p>5.00</p>
+                        <p>6.00</p>
+                     </div>
+                  </div>
+                  <div class="favorite-item">
+                     <div class="favorite-name">
+                        <p>Cortado</p>
+                        <span>Equal parts espresso and warm milk, perfectly balanced.</span>
+                     </div>
+                     <div class="favorite-price">
+                        <p>3.95</p>
+                        <p>4.95</p>
+                     </div>
+                  </div>
+                  <div class="favorite-item">
+                     <div class="favorite-name">
+                        <p>Flat White</p>
+                        <span>Smooth espresso with microfoam steamed milk.</span>
+                     </div>
+                     <div class="favorite-price">
+                        <p>4.10</p>
+                        <p>5.10</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="favourite-coffee">
+            <div class="container">
+               <h1 class="favourite-coffee-title">
+                  <span class="discover-special">Favorite</span> <span class="discover-special-letter">Coffee</span>
+               </h1>
+            </div>
+         </section>
+         <section class="snacks">
+            <div class="container">
+               <div class="snacks-container-menu">
+                  <div class="snacks-title">
+                     <h1 class="special-font">Snacks</h1>
+                     <h3>Price</h3>
+                  </div>
+                  <div class="menu-items">
+                     <div class="menu-name">
+                        <p>Plain bread</p>
+                        <span>Soft and golden with a tantalizing aroma</span>
+                     </div>
+                     <div class="menu-price">
+                        <p>1.50</p>
+                     </div>
+                  </div>
+                  <div class="menu-items">
+                     <div class="menu-name">
+                        <p>Plain bread</p>
+                        <span>Soft and golden with a tantalizing aroma</span>
+                     </div>
+                     <div class="menu-price">
+                        <p>1.50</p>
+                     </div>
+                  </div>
+                  <div class="menu-items">
+                     <div class="menu-name">
+                        <p>Plain bread</p>
+                        <span>Soft and golden with a tantalizing aroma</span>
+                     </div>
+                     <div class="menu-price">
+                        <p>1.50</p>
+                     </div>
+                  </div>
+                  <div class="menu-items">
+                     <div class="menu-name">
+                        <p>Plain bread</p>
+                        <span>Soft and golden with a tantalizing aroma</span>
+                     </div>
+                     <div class="menu-price">
+                        <p>1.50</p>
+                     </div>
+                  </div>
+                  <div class="menu-items">
+                     <div class="menu-name">
+                        <p>Plain bread</p>
+                        <span>Soft and golden with a tantalizing aroma</span>
+                     </div>
+                     <div class="menu-price">
+                        <p>1.50</p>
+                     </div>
+                  </div>
+                  <div class="menu-items">
+                     <div class="menu-name">
+                        <p>Plain bread</p>
+                        <span>Soft and golden with a tantalizing aroma</span>
+                     </div>
+                     <div class="menu-price">
+                        <p>1.50</p>
+                     </div>
+                  </div>
+                  <div class="menu-items">
+                     <div class="menu-name">
+                        <p>Plain bread</p>
+                        <span>Soft and golden with a tantalizing aroma</span>
+                     </div>
+                     <div class="menu-price">
+                        <p>1.50</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="showcase">
+            <div class="container">
+               <div class="showcase-products">
+                  <a href="" data-large-src="assets/pf-1.jpg" data-pop="View"> 
+                  <img src="assets/1.png" alt="Test-1">
+                  </a>
+                  <a href=""  data-large-src="assets/pf-2.jpg" data-pop="View"  >
+                  <img src="assets/2.png" alt="Test-2">
+                  </a>
+                  <a href="" data-large-src="assets/pf-3.jpg"   data-pop="View" >
+                  <img src="assets/3.png" alt="Test-3">
+                  </a>
+                  <a href="" data-large-src="assets/pf-4.jpg" data-pop="View" >
+                  <img src="assets/4.png" alt="Test-4">
+                  </a>
+                  <a href="" data-large-src="assets/pf-5.jpg" data-pop="View" >
+                  <img src="assets/5.png" alt="Test-5">
+                  </a>
+                  <a href="" data-large-src="assets/pf-6.jpg" data-pop="View" >
+                  <img src="assets/6.png" alt="Test-6">
+                  </a>
+               </div>
+            </div>
+            <div class="modal">
+               <div class="modal-content">
+                  <button id="close-btn">&times;</button>
+                  <img id="modal-img" src="" alt="">
+                  <div class="caption">asdasdas</div>
+               </div>
+               <button id="previous">&#10094;</button>
+               <button id="next">&#10095;</button>
+            </div>
+         </section>
+         <section class="favourite-coffee">
+            <div class="container">
+               <h1 class="favourite-coffee-title">
+                  <span class="discover-special">Favorite</span> <span class="discover-special-letter">Coffee</span>
+               </h1>
+            </div>
+         </section>
+         <section class="review">
+            <img class="review-img" src="assets/bg-side-1.jpg" alt="">
+            <div class="review-text">
+            <div class="container">
+            <div class="review-wrapper">
+               <div class="review-carousel">
+                  <div class="review-slide">
+                     <span class="review-title-1">Customer</span>
+                     <span class="review-title-2">Reviews</span>
+                     <p>
+                        As a busy professional, I rely on my morning coffee to kickstart my day. The rich, smooth taste and heavenly aroma never fail to perk me up and get me ready to tackle whatever the day throws at me. It's like a little slice of heaven in a cup!
+                     </p>
+                     <h3>Jenna Smith</h3>
+                  </div>
+                     <div class="review-slide">
+                     <span class="review-title-1">Customer</span>
+                     <span class="review-title-2">Reviews</span>
+                     <p>
+                        As a busy professional, I rely on my morning coffee to kickstart my day. The rich, smooth taste and heavenly aroma never fail to perk me up and get me ready to tackle whatever the day throws at me. It's like a little slice of heaven in a cup!
+                     </p>
+                     <h3>Jenna Smith</h3>
+                  </div>
+                     <div class="review-slide">
+                     <span class="review-title-1">Customer</span>
+                     <span class="review-title-2">Reviews</span>
+                     <p>
+                        As a busy professional, I rely on my morning coffee to kickstart my day. The rich, smooth taste and heavenly aroma never fail to perk me up and get me ready to tackle whatever the day throws at me. It's like a little slice of heaven in a cup!
+                     </p>
+                     <h3>Jenna Smith</h3>
+                  </div>
+                
+               </div>
 
-    <div class="fullpage-carousel">
-      <div class="carousel-slides-wrapper">
-        <div class="carousel-slide">
-          <img src="assets/slide-1.jpg" alt="" />
-          <div class="slide-content">
-            <h1>the Perfect <span class="taste">Blend</span></h1>
-            <p>
-              Prepare to be enchanted by the seductive allure of our coffee's
-              aromatic taste, a sensory symphony that begins the moment you lift
-              the cup to your lips.
-            </p>
-            <button>view Menu</button>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="assets/slide-2.jpg" alt="" />
-          <div class="slide-content">
-            <h1>Aromatic <span class="taste">Taste</span></h1>
-            <p>
-              Prepare to be enchanted by the seductive allure of our coffee's
-              aromatic taste, a sensory symphony that begins the moment you lift
-              the cup to your lips.
-            </p>
-            <button>view Menu</button>
-          </div>
-        </div>
-      </div>
+               <div class="dots-nagivation">
+                  <div class="carousel-dots">
 
-      <button class="prev-btn" aria-label="Previous slide">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-      <button class="next-btn" aria-label="Next slide">
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-    </div>
-    <script src="main.js"></script>
-  </body>
+                  </div>
+                  <div class="carousel-buttons">
+                      <button class="review-prev"> &#10094;</button>
+                      <button class="review-next">&#10095;</button>
+                  </div>
+               </div>
+              
+ 
+             
+            </div>
+         </section>
+         <section class="call-us">
+            <div class="container">
+               <div class="call-us-title">
+                  <h3>Call us now and get special offers! </h3>
+                  <button>Call Us Now</button>
+               </div>
+              
+            </div>
+         </section>
+      </main>
+      <script src="js/carousel.js"></script>
+       <script src="js/review-carousel.js"></script>
+      <script src="main.js"></script>
+   </body>
 </html>
