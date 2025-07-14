@@ -24,10 +24,18 @@ function updateDots(){
 
 
 function changeSlide(line){
-   reviewCarousel.style.transform = `translateX(-${line * (100/totalCarousel)}%)`
+
+
+   
+
+      reviewCarousel.style.transform = `translateX(-${line * (100/totalCarousel)}%)`
+ 
+
    reviewIndex = line;
    updateDots()
 }
+
+
 
 
 
