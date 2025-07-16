@@ -17,32 +17,100 @@
          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sacramento&display=swap"
          rel="stylesheet"
          />
+      <style>
+         body{
+         background: #18191b;
+         }
+
+         header{
+            position: relative !important;
+            background-image: url(assets/bg-2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 40vh;
+            width: 100%;
+            background-size: cover;
+      
+         }
+      </style>
    </head>
    <body>
+       <header>
+                 <div class="container">
+            <nav>
+               <div class="navbar-container">
+                  <div class="logo">
+                     <img src="assets/logo.png" alt="jaqesto-logo" />
+                  </div>
+                  <button
+                     class="hamburger-menu-button"
+                     aria-label="Menüyü aç/kapat"
+                     aria-expanded="false"
+                     >
+                  &#9776;
+                  </button>
+                  <ul class="nav-menu">
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                     </li>
+                     <li class="logo-item">
+                        <img src="assets/logo.png" alt="jaqesto-logo" />
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Menu</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Booking</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                     </li>
+                  </ul>
+                  <!--Hamburger menu icon for mobile view */-->
+                  <ul class="nav-menu-mobile">
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Home</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Menu</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Booking</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">About</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Blog</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+       </header>
       <section class="coffee-menu-container">
          <div class="container">
             <div class="coffee-menu">
                <div class="menu-header">
-                  <ul>
-                     <li>
-                        <a href="">All</a>
-                     </li>
-                     <li>
-                        <a href="">Coffee</a>
-                     </li>
-                     <li>
-                        <a href="">Non Coffee</a>
-                     </li>
-                     <li>
-                        <a href="">Main Dishes</a>
-                     </li>
-                     <li>
-                        <a href="">Breads</a>
-                     </li>
-                  </ul>
+                  <div class="coffe-list">
+                     <button>All</button>
+                     <button>Coffee</button>
+                     <button>Non Coffee</button>
+                     <button>Main dishes</button>
+                     <button>Breads</button>
+                  </div>
                </div>
-               <div class="menu-list">
-                  <div class="menu-coffee">
+               <div class="menu-list" >
+                  <div class="menu-coffee" id="menu-1">
                      <div class="menu-coffee-title">
                         <h2>Coffee</h2>
                         <div class="menu-coffee-size">
@@ -60,7 +128,7 @@
                            <span>3.50</span>
                         </div>
                      </div>
-                        <div class="coffee-item">
+                     <div class="coffee-item">
                         <div class="coffee-type">
                            <h4>Brewed coffee</h4>
                            <span>Rich flavor of freshly brewed coffee</span>
@@ -70,7 +138,7 @@
                            <span>3.50</span>
                         </div>
                      </div>
-                        <div class="coffee-item">
+                     <div class="coffee-item">
                         <div class="coffee-type">
                            <h4>Brewed coffee</h4>
                            <span>Rich flavor of freshly brewed coffee</span>
@@ -80,7 +148,7 @@
                            <span>3.50</span>
                         </div>
                      </div>
-                        <div class="coffee-item">
+                     <div class="coffee-item">
                         <div class="coffee-type">
                            <h4>Brewed coffee</h4>
                            <span>Rich flavor of freshly brewed coffee</span>
@@ -90,7 +158,37 @@
                            <span>3.50</span>
                         </div>
                      </div>
-                        <div class="coffee-item">
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Brewed coffee</h4>
+                           <span>Rich flavor of freshly brewed coffee</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.50</span>
+                           <span>3.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Brewed coffee</h4>
+                           <span>Rich flavor of freshly brewed coffee</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.50</span>
+                           <span>3.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Brewed coffee</h4>
+                           <span>Rich flavor of freshly brewed coffee</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.50</span>
+                           <span>3.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
                         <div class="coffee-type">
                            <h4>Brewed coffee</h4>
                            <span>Rich flavor of freshly brewed coffee</span>
@@ -101,10 +199,221 @@
                         </div>
                      </div>
                   </div>
-                  
+                  <div class="menu-coffee" id="menu-2">
+                     <div class="menu-coffee-title">
+                        <h2>non coffee</h2>
+                        <div class="menu-coffee-size">
+                           <span>Medium</span>
+                           <span>Large</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Apple Tea</h4>
+                           <span>The essence of orchard-fresh apples in every sip</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.50</span>
+                           <span>3.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Steamer</h4>
+                           <span>Blend of steamed milk and flavorful syrup</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.50</span>
+                           <span>3.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Hot Chocolate</h4>
+                           <span>Crafted from the finest cocoa and creamy milk</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.50</span>
+                           <span>3.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Brewed coffee</h4>
+                           <span>Rich flavor of freshly brewed coffee</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.50</span>
+                           <span>3.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Lemonade</h4>
+                           <span>Bursting with vibrant citrus flavors</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.50</span>
+                           <span>3.50</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="menu-coffee" id="menu-3">
+                     <div class="menu-coffee-title">
+                        <h2>breads</h2>
+                        <div class="menu-coffee-size">
+                           <span>Price</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Sourdough Slice</h4>
+                           <span>Classic artisanal bread with a tangy flavor and chewy texture, served toasted.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>1.75</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Simit</h4>
+                           <span>A traditional Turkish circular bread, encrusted with sesame seeds.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>1.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Baguette</h4>
+                           <span>A long, thin loaf of classic French bread with a delightfully crisp crust.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.00</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Butter Croissant</h4>
+                           <span>A buttery, flaky, and crescent-shaped pastry, perfect for any time of day.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.25</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Focaccia</h4>
+                           <span>Italian flatbread seasoned with olive oil, sea salt, and fresh rosemary.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>2.50</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="menu-coffee" id="menu-4">
+                     <div class="menu-coffee-title">
+                        <h2>main dishes</h2>
+                        <div class="menu-coffee-size">
+                           <span>Price</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Chicken Burger</h4>
+                           <span>A juicy grilled chicken breast with fresh lettuce, tomato, and our signature sauce.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>9.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Beef Wrap</h4>
+                           <span>Tender strips of seasoned beef, peppers, and onions wrapped in a warm tortilla.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>10.00</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Pasta Bolognese</h4>
+                           <span>Classic pasta with a rich, slow-cooked meat and tomato sauce, topped with parmesan.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>8.75</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Caesar Salad</h4>
+                           <span>Crisp romaine lettuce, parmesan cheese, and croutons with a classic Caesar dressing.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>7.50</span>
+                        </div>
+                     </div>
+                     <div class="coffee-item">
+                        <div class="coffee-type">
+                           <h4>Margarita Pizza</h4>
+                           <span>A personal pizza with fresh tomato sauce, mozzarella cheese, and fragrant basil.</span>
+                        </div>
+                        <div class="coffe-price">
+                           <span>9.00</span>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
       </section>
+             <footer>
+            <div class="container">
+               <div class="footer-container">
+                  <div class="footer-info">
+                     <h3>Our Location</h3>
+                     <p>
+                        Collins Street West, Victoria 8007 Australia <br>
+                        E: contact@baresto.com <br> 
+                        T: (208) 333 9296 
+                     </p>
+                  </div>
+                  <div class="footer-logo">
+                     <a href="#home">
+                     <img src="assets/logo.png" alt="jaqesto-logo">
+                     </a>
+                  </div>
+                  <div class="footer-social">
+                     <h3>Follow Us</h3>
+                     <ul class="social-list">
+                        <li>
+                           <a href="#" aria-label="Instagram">
+                           <i class="fa-brands fa-instagram"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="Twitter">
+                           <i class="fa-brands fa-square-x-twitter"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="Google Plus">
+                           <i class="fa-brands fa-google-plus-g"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="LinkedIn">
+                           <i class="fa-brands fa-linkedin"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="footer-bottom-bar">
+                  <p>&copy; 2024 Barestro. All Rights Reserved.</p>
+               </div>
+            </div>
+         </footer>
    </body>
 </html>
