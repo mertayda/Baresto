@@ -24,8 +24,7 @@
 	--tertiary-color-rgb: 14, 70, 74;
 }
 
-* *::before,
-*::after {
+*  {
 	box-sizing: border-box;
 }
 
@@ -59,10 +58,57 @@ a {
 }
 
 
-
-.breadcrums{
+.breadcrums-container{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 5rem;
+	
 	
 }
+
+
+.breadcrums-container h1{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1rem;
+	font-size: 6rem;
+}
+
+
+
+.breadcrums-container > span {
+	color: var(--bg-light-1);
+	font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0;
+    line-height: 40px;
+    border: solid 1px  var(--bg-light-1);
+    border-left: none;
+    border-right: none;
+    display: inline-block;
+}
+
+.breadcrums{
+	display: flex;
+	gap: 5px;
+	margin-top: 1rem;
+	color: var(--secondary-color);
+}
+
+.breadcrums span:first-child{
+	color: var(--bg-light-1);
+}
+
+.breadcrums span:last-child{
+	color: var(--secondary-color);
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
 
 header {
 	position: absolute;
@@ -1112,10 +1158,17 @@ footer {
  gap: 1rem;
 }
 
+
+
 .coffe-list{
 	display: flex;
 	color: white;
 	gap: 10px;
+	margin-bottom: 2rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 
@@ -1128,8 +1181,9 @@ footer {
 
 .menu-list{
 	display: grid;
-	 grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	  align-items: start;
+	  justify-content: center;
 	  gap: 10px; 
 }
 
@@ -1184,6 +1238,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 1rem;
+	
 }
 
 .coffee-type span{
@@ -1197,12 +1252,95 @@ footer {
 	flex-shrink: 0;
 }
 
+.menu-btn {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 15px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    font-family: inherit;
+    line-height: 1.2;
+    letter-spacing: 0.025em;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.1);
+}
+
+.menu-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.menu-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.menu-btn:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 2px;
+}
+
+.menu-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    filter: none;
+}
+
+
+.menu-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+}
+
+.menu-btn:active::before {
+    width: 300px;
+    height: 300px;
+}
+
 /* ========================================================================== Media Queries for desktop========================================================================== */
 
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+
+	#menu-4{
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+}
 
 @media (max-width: 768px) {
+
+ .coffee-menu-container{
+	width: auto !important;
+ }
+
 
 	.prev-btn,
 	.next-btn {
@@ -1241,6 +1379,8 @@ footer {
 		max-width: 300px;
 	}
 
+	
+	
 
 }
 

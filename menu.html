@@ -24,10 +24,10 @@
 
          header{
             position: relative !important;
-            background-image: url(assets/bg-2.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(assets/bg-2.jpg);
             background-repeat: no-repeat;
             background-position: center;
-            height: 40vh;
+            height: 50vh;
             width: 100%;
             background-size: cover;
       
@@ -95,20 +95,27 @@
                   </ul>
                </div>
             </nav>
+           <div class="breadcrums-container">
+               <h1 class="discover-special">Discover</h1>
+              <span>OUR MENU</span>
+              <div class="breadcrums">
+                  <span >Home</span>  <span>/</span> <span> Our Menu</span>
+              </div>
+           </div>
          </div>
        </header>
       <section class="coffee-menu-container">
          <div class="container">
             <div class="coffee-menu">
-               <div class="menu-header">
+               
                   <div class="coffe-list">
-                     <button>All</button>
-                     <button>Coffee</button>
-                     <button>Non Coffee</button>
-                     <button>Main dishes</button>
-                     <button>Breads</button>
+                     <button class="menu-btn active" data-value="all">All</button>
+                     <button class="menu-btn" data-value="Coffee">Coffee</button>
+                     <button class="menu-btn" data-value="Non Coffee">Non Coffee</button>
+                     <button class="menu-btn" data-value="Main dishes">Main dishes</button>
+                     <button class="menu-btn" data-value="Breads">Breads</button>
                   </div>
-               </div>
+              
                <div class="menu-list" >
                   <div class="menu-coffee" id="menu-1">
                      <div class="menu-coffee-title">
@@ -411,9 +418,41 @@
                   </div>
                </div>
                <div class="footer-bottom-bar">
-                  <p>&copy; 2024 Barestro. All Rights Reserved.</p>
+                  <p>&copy; 2025 Jaqesto. All Rights Reserved.</p>
                </div>
             </div>
          </footer>
+
+         <script>
+            document.addEventListener("DOMContentLoaded",function(){
+                     const menuCoffe = document.querySelectorAll(".menu-coffee")
+                      const menuBtn = document.querySelectorAll(".menu-btn")
+               
+                      menuBtn.forEach((btn) => {
+                         btn.addEventListener("click",() => {
+                            let menuBtnValue = btn.getAttribute("data-value")
+                             menuCoffe.forEach((menu) => {
+                               menuCoffeTitle = menu.querySelector(".menu-coffee-title h2").textContent.toLowerCase()
+                               if(menuCoffeTitle === menuBtnValue.toLowerCase() || menuBtnValue === "all" ){
+                                   menu.style.display = "block"
+                               } else{
+                                   menu.style.display = "none"
+                               }
+                             })
+                         })
+                      })
+                
+            })
+
+
+
+               
+
+         
+            
+           
+               
+
+         </script>
    </body>
 </html>
