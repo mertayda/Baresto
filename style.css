@@ -24,7 +24,7 @@
 	--tertiary-color-rgb: 14, 70, 74;
 }
 
-*  {
+* {
 	box-sizing: border-box;
 }
 
@@ -58,18 +58,18 @@ a {
 }
 
 
-.breadcrums-container{
+.breadcrums-container {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 	margin-top: 5rem;
-	
-	
+
+
 }
 
 
-.breadcrums-container h1{
+.breadcrums-container h1 {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 1rem;
@@ -77,33 +77,32 @@ a {
 }
 
 
-
-.breadcrums-container > span {
+.breadcrums-container>span {
 	color: var(--bg-light-1);
 	font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    margin: 0;
-    line-height: 40px;
-    border: solid 1px  var(--bg-light-1);
-    border-left: none;
-    border-right: none;
-    display: inline-block;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin: 0;
+	line-height: 40px;
+	border: solid 1px var(--bg-light-1);
+	border-left: none;
+	border-right: none;
+	display: inline-block;
 }
 
-.breadcrums{
+.breadcrums {
 	display: flex;
 	gap: 5px;
 	margin-top: 1rem;
 	color: var(--secondary-color);
 }
 
-.breadcrums span:first-child{
+.breadcrums span:first-child {
 	color: var(--bg-light-1);
 }
 
-.breadcrums span:last-child{
+.breadcrums span:last-child {
 	color: var(--secondary-color);
 	font-weight: 700;
 	text-transform: capitalize;
@@ -1144,7 +1143,7 @@ footer {
 
 /*------------------------------------------------- MENU -------------------------------------------------*/
 
-.coffee-menu-container{
+.coffee-menu-container {
 
 	width: 100%;
 	height: auto;
@@ -1152,15 +1151,14 @@ footer {
 }
 
 
-.coffee-menu{
- display: flex;
- flex-direction: column;
- gap: 1rem;
+.coffee-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 
-
-.coffe-list{
+.coffe-list {
 	display: flex;
 	color: white;
 	gap: 10px;
@@ -1172,174 +1170,261 @@ footer {
 }
 
 
-#menu-4{
-    grid-area: 1 / 2 / 2 / 2;
+#menu-4 {
+	grid-area: 1 / 2 / 2 / 2;
 }
 
-    
 
-
-.menu-list{
+.menu-list {
 	display: grid;
-	 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	  align-items: start;
-	  justify-content: center;
-	  gap: 10px; 
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: start;
+	justify-content: center;
+	gap: 10px;
 }
 
-.menu-coffee{
+.menu-coffee {
 	display: flex;
-	 flex-direction: column;
-	 color: var(--bg-light-1);
-	 border: 1px solid var(--secondary-color);
-	 border-radius: 20px;
-	 padding: 2rem;
+	flex-direction: column;
+	color: var(--bg-light-1);
+	border: 1px solid var(--secondary-color);
+	border-radius: 20px;
+	padding: 2rem;
 }
 
 
-
-.menu-coffee-title{
+.menu-coffee-title {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	font-size: 1.3rem;
 }
 
-.menu-coffee-title h2{
+.menu-coffee-title h2 {
 	font-family: var(--deco-font-1);
 	color: var(--secondary-color);
-	
+
 }
 
-.menu-coffee-size{
+.menu-coffee-size {
 	display: flex;
 	gap: 1rem;
 	flex-shrink: 0;
 	color: var(--body-font-color-dark);
 	font-weight: 300;
-    font-style: italic;
+	font-style: italic;
 	font-size: 15px;
 }
 
-.coffee-type{
+.coffee-type {
 	display: flex;
 	flex-direction: column;
 	gap: 0;
 }
 
-.coffee-type h4{
+.coffee-type h4 {
 	margin: 0;
 	margin-bottom: 5px;
 }
 
 
-.coffee-item{
+.coffee-item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 1rem;
-	
+
 }
 
-.coffee-type span{
+.coffee-type span {
 	color: var(--body-font-color);
 	font-style: italic;
 }
 
-.coffe-price{
+.coffe-price {
 	display: flex;
 	gap: 1.5rem;
 	flex-shrink: 0;
 }
 
 .menu-btn {
-    display: inline-block;
-    padding: 0.5rem 1.25rem;
-    border-radius: 15px;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: white;
-    background-color: var(--tertiary-color);
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    position: relative;
-    overflow: hidden;
-    font-family: inherit;
-    line-height: 1.2;
-    letter-spacing: 0.025em;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	padding: 0.5rem 1.25rem;
+	border-radius: 15px;
+	border: none;
+	font-size: 1rem;
+	font-weight: 500;
+	color: white;
+	background-color: var(--tertiary-color);
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	position: relative;
+	overflow: hidden;
+	font-family: inherit;
+	line-height: 1.2;
+	letter-spacing: 0.025em;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .menu-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    filter: brightness(1.1);
+	transform: translateY(-1px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	filter: brightness(1.1);
 }
 
 .menu-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    transition: all 0.1s ease-in-out;
+	transform: translateY(0);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	transition: all 0.1s ease-in-out;
 }
 
 .menu-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
 }
 
 .menu-btn:focus-visible {
-    outline: 2px solid rgba(255, 255, 255, 0.8);
-    outline-offset: 2px;
+	outline: 2px solid rgba(255, 255, 255, 0.8);
+	outline-offset: 2px;
 }
 
 .menu-btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-    transform: none;
-    box-shadow: none;
-    filter: none;
+	opacity: 0.6;
+	cursor: not-allowed;
+	transform: none;
+	box-shadow: none;
+	filter: none;
 }
 
 
 .menu-btn::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	transition: width 0.3s, height 0.3s;
 }
 
 .menu-btn:active::before {
-    width: 300px;
-    height: 300px;
+	width: 300px;
+	height: 300px;
 }
+
+
+/*******---------------Blog-section ----********/
+
+
+.blog {
+	padding: 5rem 1rem;
+}
+
+.blog-container{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+
+
+.blog-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 1rem;
+	gap: 2rem;
+	
+
+	
+}
+
+
+.blog-title {
+	display: flex;
+	justify-content: center;
+    flex: 1 1 55%;
+	gap: 20px;
+	color: var(--bg-light-1);
+}
+
+
+.blog-img {
+
+	flex: 1 1 45%;
+   
+}
+
+.blog-img img {
+	max-width: 100%;
+    height: auto;
+	border-radius: 25px;
+	object-fit: cover;
+}
+
+
+.blog-date {
+	border: 3px solid var(--secondary-color);
+	padding: 10px;
+	font-weight: 600;
+	letter-spacing: 5px;
+	font-family: var(--title-font);
+	font-size: 1rem;
+	text-align: center;
+	align-self: flex-start;
+
+}
+
+.blog-date>span {
+	font-size: 1.2rem;
+}
+
+
+.blog-content h4 {
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+.blog-content p {
+	color: var(--body-font-color-dark);
+	line-height: 1.8;
+}
+
+.blog-content a {
+	background-color: var(--primary-color);
+	padding: 0.5rem 1rem;
+	color: white;
+	border-radius: 26px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
 
 /* ========================================================================== Media Queries for desktop========================================================================== */
 
 
 @media (max-width: 576px) {
 
-	#menu-4{
-    grid-area: 1 / 1 / 1 / 1;
-}
+	#menu-4 {
+		grid-area: 1 / 1 / 1 / 1;
+	}
 
 }
 
 @media (max-width: 768px) {
 
- .coffee-menu-container{
-	width: auto !important;
- }
+	.coffee-menu-container {
+		width: auto !important;
+	}
 
 
 	.prev-btn,
@@ -1379,11 +1464,21 @@ footer {
 		max-width: 300px;
 	}
 
+
+ /* Blog */
+
+ .blog-item{
+	flex-direction: column;
 	
-	
+ }
+
+   .blog-title,
+    .blog-img {
+        flex-basis: 100%;
+    }
+
 
 }
-
 
 @media (max-width: 991px) {
 	.navbar-container {
