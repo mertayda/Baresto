@@ -168,6 +168,14 @@ textarea {
 
 }
 
+
+#error{
+   display: block;
+   color: var(--secondary-color);
+   
+  
+}
+
 @media (max-width: 767.9px) {
 
  .booking-section {
@@ -290,10 +298,12 @@ form, .date-form > div, .details-input, textarea {
                      <div>
                         <label for="date">Date</label>
                         <input type="date" name="date" id="date">
+                        <div id="error" class="dateError">Please select Future date</div>
                      </div>
                      <div>
                         <label for="time">Time</label>
                         <input type="time" name="time" id="time">
+                         <div class="timeError" id="error">Please select guest </div>
                      </div>
                      <div>
                         <label for="guest">How many guest</label>
@@ -303,18 +313,22 @@ form, .date-form > div, .details-input, textarea {
                            <option value="3">11-20</option>
                            <option value="">more than 20</option>
                         </select>
+                           <div class="guestError" id="error">Please select guest </div>
                      </div>
                   </div>
                   <div class="details">
                          <h4>Enter your details</h4>
                      <div>
                         <div class="details-input">
-                        <input type="text"  name="details" id="details-data">
-                        <input type="email"  name="emial" id="email">
-                        <input type="text" name="phone" id="phone">
+                        <input type="text"  name="details" id="details-data" placeholder="Your Name">
+                         <div class="nameError" id="error">Please enter your full name </div>
+                        <input type="email"  name="email" id="email" placeholder="Your Email">
+                         <div class="emailError" id="error">Please enter your  email </div>
+                        <input type="text" name="phone" id="phone" placeholder="Your Phone">
+                         <div class="phoneError" id="error">Please enter a valid phone number</div>
                         </div>
                       
-                        <textarea name="messeage" id="messeage" cols="20" rows="5"> </textarea>
+                        <textarea name="messeage" id="messeage" cols="20" rows="5" placeholder="Your Message"></textarea>
                      </div>
                    
                   </div>
@@ -370,5 +384,6 @@ form, .date-form > div, .details-input, textarea {
             </div>
          </div>
       </footer>
+     <script src="js/formValidation.js"></script>
    </body>
 </html>
