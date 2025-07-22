@@ -3,32 +3,28 @@ document.querySelectorAll("#error").forEach(error => error.style.display = "none
 
 document.querySelector("form").addEventListener("submit", (e) => {
 	e.preventDefault();
-	if (validate()) {
-		sendForm()
-
-	} else {
-
-	}
-
+	validate()  
+	
+		
 })
 
 function validate() {
 	document.querySelectorAll("#error").forEach(error => error.style.display = "none")
 
-	let isvalid = true
+	let isValid = true
 
 
 	// validate  date
 
-	let date = document.querySelector("#date").value;
+	let date = document.querySelector("#date").value.trim()
 	if (!date) {
-		isvalid = false
+		isValid = false
 	} else {
 		let chosenDate = new Date(date)
 		let now = new Date()
 		if (chosenDate < now) {
 			showError(".dateError")
-			isvalid = false
+			isValid = false
 		}
 
 
@@ -39,7 +35,7 @@ function validate() {
 	const name = document.querySelector("#details-data").value.trim()
 	if (!name || name.length === 0) {
 		showError(".nameError")
-		isvalid = false
+		isValid = false
 
 	}
 
@@ -51,7 +47,7 @@ function validate() {
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	if (!emailRegex.test(email) || !email) {
 		showError(".emailError")
-		isvalid = false
+		isValid = false
 
 	}
 
@@ -60,45 +56,137 @@ function validate() {
 	const phoneRegex = /^[\d\s\-\+\(\)]+$/;
 	if (!phoneRegex.test(phone) || phone.length < 10) {
 		showError(".phoneError")
-		isvalid = false
+		isValid = false
 
 	}
 
-	const textarea = document.querySelector("#messeage")
-	if (!textarea) {
+	
 
-		isvalid = false
-
-	}
-
-	return isvalid
+	
 
 }
+
+
+
 
 
 function showError(errorId) {
-	let test = document.querySelector(errorId)
-	test.style.display = "block"
+	let  error = document.querySelector(errorId)
+	error.style.display = "block"
 
 }
 
 
+function hideError(errorId){
+  
+  let  error = document.querySelector(errorId)
+	error.style.display = "none"
 
-function validate(){
-	document.querySelectorAll("input, select").forEach(pick => pick.addEventListener("blur", () => {
-				test(field)
-
-	}))
 }
 
 
-function test(field){
-	if(field.classList.contains("details")){
-		 let am  = document.querySelector(".nameError")
-		 am.style.display = "block"
-	}
+// blur event validations
+
+document.querySelectorAll("input, select").forEach((field) => {
+	 field.addEventListener("blur", () => {
+		  blueValidation(field)
+	 })
 		
-	
+
+})
+
+
+
+		
+function blueValidation(field){
+
+
+   if(field.id === "details-data"){
+	   let  nameInput = field.value.trim()
+	   if(!nameInput || nameInput.length < 3){
+		  	showError(".nameError")
+			return false
+			 
+	   } else{
+		
+			hideError(".nameError")
+			return true
+	   }
+	 
+   }
+
+
+
+   if(field.id === "email"){
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	 let emailInput = field.value.trim()
+	 if(!emailRegex.test(emailInput)){
+		showError(".emailError")
+		return false
+	 } else{
+		hideError(".emailError")
+		return true
+	 }
+	 
+   }
+
+
+
+if(field.id === "phone"){
+  const phoneRegex = /^[\d\s\-\+\(\)]+$/;
+   let phoneInput = field.value
+   if(!phoneRegex.test(phoneInput)){
+	 showError(".phoneError")
+	 return false
+   } else{
+	hideError(".phoneError")
+	return true
+   }
 }
 
-validate()
+
+ if(field.id  === "date"){
+	 const dateInput = field.value
+	 if(!dateInput  ){
+		showError(".dateError")
+		return false
+	
+	 } 
+	 
+	 let chosenDate = new Date(dateInput)
+	 let now = new Date()
+	 if(chosenDate < now){
+		showError(".dateError")
+		return false
+	 }
+
+	 hideError(".dateError")
+   return true
+
+
+ }
+
+
+  if(field.id === "guest"){
+	 const guestInput = field.value
+	 if(!guestInput){
+		showError(".guestError")
+		return false
+	 } else{
+		hideError(".guestError")
+		return true
+	 }
+  }
+   
+
+  if(field.id === "time"){
+	const timeInput = field.value
+	if(!timeInput){
+		showError(".timeError")
+		return false
+	} else{
+		hideError(".timeError")
+		return true
+	}
+  }
+} 
