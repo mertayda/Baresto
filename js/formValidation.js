@@ -1,9 +1,20 @@
+const closeBtn = document.querySelector(".close-btn")
+const  successCard = document.querySelector(".success-card")
+
+
+closeBtn.addEventListener("click",() => {
+	  successCard.style.display = "none"
+})
+
+
 document.querySelectorAll("#error").forEach(error => error.style.display = "none")
+
+
 
 
 document.querySelector("form").addEventListener("submit", (e) => {
 	e.preventDefault();
-	validate()  
+	validate()
 	
 		
 })
@@ -61,7 +72,10 @@ function validate() {
 	}
 
 	
-
+ if(isValid){
+	  	const success = document.querySelector(".success-card")
+		success.style.display = "block"
+ }
 	
 
 }
@@ -86,6 +100,8 @@ function hideError(errorId){
 
 
 // blur event validations
+
+
 
 document.querySelectorAll("input, select").forEach((field) => {
 	 field.addEventListener("blur", () => {
@@ -190,3 +206,6 @@ if(field.id === "phone"){
 	}
   }
 } 
+
+
+

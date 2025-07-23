@@ -19,8 +19,12 @@
          />
    <style>
    
-   body {
+
+ body {
 	background: #18191b;
+   height: 100%;
+   width: 100%;
+   position: relative;
 }
 
 header {
@@ -35,6 +39,7 @@ header {
 
 .booking {
 	padding: 5rem 1rem;
+   
 }
 
 .booking-section {
@@ -176,6 +181,159 @@ textarea {
   
 }
 
+
+.success-card{
+   position: fixed;
+   top: 0;
+   left:0;
+   right: 0;
+   bottom: 0;
+   display: none;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   margin: 0 auto;
+   opacity: 1;
+   transition: all 0.3s ease;
+   background: rgba(0, 0, 0, 0.5);
+   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+   z-index: 9999;
+  
+}
+
+
+.success-card > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 3rem 2.5rem;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    width: 90%;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+
+}
+
+
+.success-card h3 {
+    
+    background-color: var(--secondary-color);
+    position: relative;
+    padding: 1rem;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+     box-shadow: 
+        0 8px 30px rgba(46, 204, 113, 0.3),
+        0 4px 15px rgba(46, 204, 113, 0.2);
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+.success-card h3::before{
+   content: "";
+   position: absolute;
+   top: 0;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #21a7b2, #0e464a, #116a70, #116a70);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.7;
+    animation: iconGlow 2s ease-in-out infinite;
+
+}
+
+
+
+.success-card h3 i {
+    font-size: 3rem;
+    color: white;
+    filter: drop-shadow(0 0 20px rgba(39, 174, 96, 0.3));
+     animation: checkBounce 0.6s ease-out 0.2s both;
+  
+}
+
+
+
+
+.success-card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: translateY(20px);
+     animation: textSlideIn 0.6s ease-out 0.4s both;
+
+}
+
+
+
+.close-btn{
+    position: absolute;
+       top: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+     background: rgba(255, 255, 255, 0.9);
+   
+}
+
+.close-btn:hover {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.2);
+}
+
+
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes iconGlow {
+    0%, 100% { opacity: 0.7; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.1); }
+}
+
+@keyframes checkBounce {
+    0% { transform: scale(0) rotate(-45deg); opacity: 0; }
+    50% { transform: scale(1.2) rotate(-45deg); }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes textSlideIn {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+
+
 @media (max-width: 767.9px) {
 
  .booking-section {
@@ -201,16 +359,8 @@ form, .date-form > div, .details-input, textarea {
         flex-direction: column;  
     }
 
-   
-
-    
-
+     
 }
-
-
-
-
-
 
 </style>
    </head>
@@ -336,6 +486,7 @@ form, .date-form > div, .details-input, textarea {
                </form>
             </div>
          </div>
+     
       </section>
       <footer>
          <div class="container">
@@ -379,11 +530,22 @@ form, .date-form > div, .details-input, textarea {
                   </ul>
                </div>
             </div>
+         
+         </div>
             <div class="footer-bottom-bar">
                <p>&copy; 2025 Jaqesto. All Rights Reserved.</p>
             </div>
-         </div>
       </footer>
+          <div class="success-card">
+            <div>
+                 <button class="close-btn">
+                     <i class="fa-solid fa-xmark"></i>
+                 </button>
+                 <h3><i class="fa-solid fa-check"></i></h3>
+               <p>Successfully Submitted</p>
+            </div>
+             
+         </div>
      <script src="js/formValidation.js"></script>
    </body>
 </html>
