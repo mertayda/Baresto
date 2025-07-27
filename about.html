@@ -1,0 +1,378 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sacramento&display=swap"
+         rel="stylesheet"
+         />
+    <style>
+        body{
+              background: #18191b;
+              font-family: var(--body-font);
+        }
+
+
+        header{
+            position: relative;
+        }
+        .about{
+            padding: 5rem 1rem;
+        }
+        .about-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+           
+        }
+        .about-title{
+         display: flex;
+         flex-direction: column;
+         flex: 1 1 50%;
+         color: white;
+        }
+        
+
+        .about-title p{
+            line-height: 1.7;
+          
+        }  
+
+
+
+      .about-title p:nth-child(3),
+      .about-title p:nth-child(4) 
+      {
+       color: var(--body-font-color-dark);
+      }
+
+     .about-img{
+      flex: 1 1 50%;
+      display: flex;
+      gap: 1rem;
+   
+   
+     }
+
+     .about-img-container{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    
+ 
+     }
+
+     .about-img-container img{
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+        border-radius: 10px;
+     }
+
+     .count-number{
+      background-color: var(--tertiary-color);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
+     }
+        
+     .count-number span{
+      font-size: 2rem;
+     }
+
+
+     .team{
+      padding: 5rem 1rem;
+     }
+
+     .team-container{
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+
+     }
+
+     .team-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+     
+     
+     .team-card h4{
+      color: white;
+      margin: 0;
+      padding: 0;
+       margin: 1rem 0;
+     }
+
+     .team-card p{
+      color: var(--body-font-color-dark); 
+       margin: 0;
+      padding: 0;
+      
+     }
+  
+     .team-card-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 26px;
+  overflow: hidden;
+  background-color: var(--secondary-color)
+}
+
+.team-card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+  
+
+.team-connect{
+   display: flex;
+   gap: 10px;
+}
+
+
+   
+    </style>
+</head>
+
+     <body>
+ 
+      <header>
+                 <div class="container">
+            <nav>
+               <div class="navbar-container">
+                  <div class="logo">
+                     <img src="assets/logo.png" alt="jaqesto-logo" />
+                  </div>
+                  <button
+                     class="hamburger-menu-button"
+                     aria-label="Menüyü aç/kapat"
+                     aria-expanded="false"
+                     >
+                  &#9776;
+                  </button>
+                  <ul class="nav-menu">
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                     </li>
+                     <li class="logo-item">
+                        <img src="assets/logo.png" alt="jaqesto-logo" />
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Menu</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Booking</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                     </li>
+                  </ul>
+                  <!--Hamburger menu icon for mobile view */-->
+                  <ul class="nav-menu-mobile">
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Home</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Menu</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Booking</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">About</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Blog</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+           <div class="breadcrums-container">
+              <h1 class="discover-special">Latest</h1>
+              <span>Blog</span>
+              <div class="breadcrums">
+                  <span >Home</span>  <span>/</span> <span> Blog</span>
+              </div>
+           </div>
+         </div>
+       </header>
+
+       <section class="about">
+            <div class="container">
+                <div class="about-container">
+                     <div class="about-title">
+                        <h2>How It Begins</h2>
+                         <p>At "Baresto," we believe in the power of good coffee and warm hospitality. Our journey began with a simple vision: to create a welcoming space where friends, families, and strangers alike could come together to enjoy delicious beverages, homemade treats, and meaningful connections.</p>
+                         <p>Nestled in the heart of our community, "Baresto" is more than just a café; it's a gathering place, a refuge from the chaos of everyday life, and a beacon of positivity and warmth. From the moment you walk through our doors, you're greeted with the inviting aroma of freshly brewed coffee and the friendly smiles of our dedicated team. Our menu is a reflection of our commitment to quality and creativity. We source the finest beans from around the world and carefully craft each cup with precision and care. Whether you're craving a classic espresso, a creamy latte, or a refreshing iced tea, we have something to delight every palate</p>
+                         <p>As a proud member of the community, we're committed to giving back and making a positive impact wherever we can. From supporting local artisans and farmers to hosting events that celebrate diversity and inclusion, we believe in using our platform to spread joy and goodwill in our neighborhood and beyond.</p>
+                     </div>
+                     
+                  
+                     <div class="about-img">
+                        <div class="about-img-container">
+                           <img src="assets/ms-1.jpg" alt="">
+                            <div class="count-number"  data-number = "50"><span>0%</span> <br> Turnover increased</div>
+                        </div>
+                         <div class="about-img-container">
+                            <div class="count-number" data-number = "750"><span>0+</span><br>  Positive feedbacks</div>
+                           <img src="assets/ms-2.jpg" alt="">
+                           
+                        </div>
+                               
+                                                 
+                     </div>
+                </div>
+            </div> 
+               </section>
+                 <section class="favourite-coffee">
+            <div class="container">
+               <h1 class="favourite-coffee-title">
+                  <span class="discover-special">Favorite</span> <span class="discover-special-letter">Coffee</span>
+               </h1>
+            </div>
+         </section>
+            <section class="team">
+  <div class="container">
+    <div class="team-container">
+      
+      <div class="team-card">
+        <div class="team-card-img">
+          <img src="assets/team-4.webp" alt="Fin Heiber">
+        </div>
+        <h4>Fin Heiber</h4>
+        <p>Chef</p>
+        <ul class="team-connect">
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin "></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/90xxxxxx" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter "></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+           <div class="team-card">
+        <div class="team-card-img">
+          <img src="assets/team-4.webp" alt="Fin Heiber">
+        </div>
+        <h4>Fin Heiber</h4>
+        <p>Chef</p>
+        <ul class="team-connect">
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin "></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/90xxxxxx" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter "></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+           <div class="team-card">
+        <div class="team-card-img">
+          <img src="assets/team-4.webp" alt="Fin Heiber">
+        </div>
+        <h4>Fin Heiber</h4>
+        <p>Chef</p>
+        <ul class="team-connect">
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin "></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/90xxxxxx" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter "></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+           <div class="team-card">
+        <div class="team-card-img">
+          <img src="assets/team-4.webp" alt="Fin Heiber">
+        </div>
+        <h4>Fin Heiber</h4>
+        <p>Chef</p>
+        <ul class="team-connect">
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin "></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/90xxxxxx" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter "></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+  
+
+          
+    </div>
+  </div>
+</section>
+
+       
+</body>
+</html>
