@@ -1,0 +1,246 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sacramento&display=swap"
+         rel="stylesheet"
+         />
+        <style>
+         body{
+         background: #18191b;
+         }
+
+         header{
+            position: relative !important;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(assets/bg-2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 50vh;
+            width: 100%;
+            background-size: cover;
+      
+         }
+
+         .contact{
+            padding: 5rem 1rem;
+         }
+
+         .contact-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            gap: 1rem;
+         }
+
+
+         .contact-title{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 33.333%;
+         }
+
+         #contact-form{
+            flex: 1 1 66.666%;
+         }
+
+         #contact-form > div{
+            display: flex;
+            gap: 1rem;
+         }
+
+
+
+
+         .contact-list{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 50%;
+         }
+
+         input[type="text"], input[type="email"], input[type="number"],textarea{
+                padding: 1rem;
+                background: none;
+                outline: none;
+                border: solid 1px var(--secondary-color);
+                padding: 5px 20px;
+                
+         }
+  
+         textarea{
+            flex: 1 1 50%;
+         }
+
+      </style>
+</head>
+<body>
+          <header>
+         <div class="container">
+            <nav>
+               <div class="navbar-container">
+                  <div class="logo">
+                     <img src="assets/logo.png" alt="jaqesto-logo" />
+                  </div>
+                  <button
+                     class="hamburger-menu-button"
+                     aria-label="Menüyü aç/kapat"
+                     aria-expanded="false"
+                     >
+                  &#9776;
+                  </button>
+                  <ul class="nav-menu">
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                     </li>
+                     <li class="logo-item">
+                        <img src="assets/logo.png" alt="jaqesto-logo" />
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Menu</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Booking</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                     </li>
+                  </ul>
+                  <!--Hamburger menu icon for mobile view */-->
+                  <ul class="nav-menu-mobile">
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Home</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Menu</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Booking</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">About</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Blog</a>
+                     </li>
+                     <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+
+       <section class="contact">
+            <div class="container">
+               <div class="contact-container">
+                  <div class="contact-title">
+                    <h4>Our Location</h4>
+                    <p>Collins Street West, Victoria 8007 Australia <br>
+                     T. (208) 333 9296 <br>
+                    E. contact@baresto.com</p>
+                </div>
+                 <form action="" id="contact-form">
+                    <div>
+                         <div class="contact-list">
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your Email">
+                        <input type="number" name="number" placeholder="Your Number">
+                        </div>
+                        <textarea name="messeage" id="" placeholder="Your messeage"></textarea>
+                    </div>
+                    <button>Send Messeage</button>
+                 </form>
+               </div>
+            </div>
+       </section>
+        <footer>
+            <div class="container">
+               <div class="footer-container">
+                  <div class="footer-info">
+                     <h3>Our Location</h3>
+                     <p>
+                        Collins Street West, Victoria 8007 Australia <br>
+                        E: contact@baresto.com <br> 
+                        T: (208) 333 9296 
+                     </p>
+                  </div>
+                  <div class="footer-logo">
+                     <a href="#home">
+                     <img src="assets/logo.png" alt="jaqesto-logo">
+                     </a>
+                  </div>
+                  <div class="footer-social">
+                     <h3>Follow Us</h3>
+                     <ul class="social-list">
+                        <li>
+                           <a href="#" aria-label="Instagram">
+                           <i class="fa-brands fa-instagram"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="Twitter">
+                           <i class="fa-brands fa-square-x-twitter"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="Google Plus">
+                           <i class="fa-brands fa-google-plus-g"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="LinkedIn">
+                           <i class="fa-brands fa-linkedin"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="footer-bottom-bar">
+                  <p>&copy; 2025 Jaqesto. All Rights Reserved.</p>
+               </div>
+            </div>
+         </footer>
+
+  <script>
+     const contactForm = document.querySelector("#contact-form")
+      contactForm.addEventListener("submit",(e) => {
+        e.preventDefault()
+
+
+        fetch("https://jsonplaceholder.typicode.com/posts" ,{
+            method:"POST",
+            headers: {
+            'Content-Type': 'application/json',
+        },
+            body:JSON.stringify(data)
+        })
+        
+      })
+
+        // validation
+     
+  </script>
+
+
+</body>
+
+</html>

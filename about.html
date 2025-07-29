@@ -26,6 +26,11 @@
 
         header{
             position: relative;
+              background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(assets/bg-7.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 50vh;
+            width: 100%;
         }
         .about{
             padding: 5rem 1rem;
@@ -152,10 +157,35 @@
 .team-connect{
    display: flex;
    gap: 10px;
+   padding :0;
 }
 
 
-   
+.team-connect li i{
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+.team-connect li{
+  transition: all 0.3s ease-out;
+  padding: 0.3rem;
+}
+
+.team-connect li:hover{
+  background-color: white;
+ 
+}
+
+@media (max-width:992px){
+
+   .about-container{
+      flex-direction: column;
+   }
+   .about-title, .about-img{
+      flex-basis: 100%;
+   }
+ }
+
     </style>
 </head>
 
@@ -230,149 +260,235 @@
            </div>
          </div>
        </header>
-
-       <section class="about">
-            <div class="container">
-                <div class="about-container">
-                     <div class="about-title">
-                        <h2>How It Begins</h2>
-                         <p>At "Baresto," we believe in the power of good coffee and warm hospitality. Our journey began with a simple vision: to create a welcoming space where friends, families, and strangers alike could come together to enjoy delicious beverages, homemade treats, and meaningful connections.</p>
-                         <p>Nestled in the heart of our community, "Baresto" is more than just a café; it's a gathering place, a refuge from the chaos of everyday life, and a beacon of positivity and warmth. From the moment you walk through our doors, you're greeted with the inviting aroma of freshly brewed coffee and the friendly smiles of our dedicated team. Our menu is a reflection of our commitment to quality and creativity. We source the finest beans from around the world and carefully craft each cup with precision and care. Whether you're craving a classic espresso, a creamy latte, or a refreshing iced tea, we have something to delight every palate</p>
-                         <p>As a proud member of the community, we're committed to giving back and making a positive impact wherever we can. From supporting local artisans and farmers to hosting events that celebrate diversity and inclusion, we believe in using our platform to spread joy and goodwill in our neighborhood and beyond.</p>
-                     </div>
-                     
-                  
-                     <div class="about-img">
-                        <div class="about-img-container">
-                           <img src="assets/ms-1.jpg" alt="">
-                            <div class="count-number"  data-number = "50"><span>0%</span> <br> Turnover increased</div>
-                        </div>
-                         <div class="about-img-container">
-                            <div class="count-number" data-number = "750"><span>0+</span><br>  Positive feedbacks</div>
-                           <img src="assets/ms-2.jpg" alt="">
-                           
-                        </div>
-                               
-                                                 
-                     </div>
-                </div>
-            </div> 
-               </section>
-                 <section class="favourite-coffee">
-            <div class="container">
-               <h1 class="favourite-coffee-title">
-                  <span class="discover-special">Favorite</span> <span class="discover-special-letter">Coffee</span>
-               </h1>
+<section class="about">
+   <div class="container">
+      <div class="about-container">
+         <div class="about-title">
+            <h2>How It Begins</h2>
+            <p>At "Baresto," we believe in the power of good coffee and warm hospitality. Our journey began with a simple vision: to create a welcoming space where friends, families, and strangers alike could come together to enjoy delicious beverages, homemade treats, and meaningful connections.</p>
+            <p>Nestled in the heart of our community, "Baresto" is more than just a café; it's a gathering place, a refuge from the chaos of everyday life, and a beacon of positivity and warmth. From the moment you walk through our doors, you're greeted with the inviting aroma of freshly brewed coffee and the friendly smiles of our dedicated team. Our menu is a reflection of our commitment to quality and creativity. We source the finest beans from around the world and carefully craft each cup with precision and care. Whether you're craving a classic espresso, a creamy latte, or a refreshing iced tea, we have something to delight every palate</p>
+            <p>As a proud member of the community, we're committed to giving back and making a positive impact wherever we can. From supporting local artisans and farmers to hosting events that celebrate diversity and inclusion, we believe in using our platform to spread joy and goodwill in our neighborhood and beyond.</p>
+         </div>
+         <div class="about-img">
+            <div class="about-img-container">
+               <img src="assets/ms-1.jpg" alt="">
+               <div class="count-number "  data-number = "50"><span>0</span>  <br> Turnover increased</div>
             </div>
-         </section>
-            <section class="team">
-  <div class="container">
-    <div class="team-container">
-      
-      <div class="team-card">
-        <div class="team-card-img">
-          <img src="assets/team-4.webp" alt="Fin Heiber">
-        </div>
-        <h4>Fin Heiber</h4>
-        <p>Chef</p>
-        <ul class="team-connect">
-          <li>
-            <a href="https://www.linkedin.com" target="_blank">
-              <i class="fab fa-linkedin "></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/90xxxxxx" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com" target="_blank">
-              <i class="fab fa-twitter "></i>
-            </a>
-          </li>
-        </ul>
+            <div class="about-img-container">
+               <div class="count-number " data-number = "750"><span >0 </span> <br>  Positive feedbacks</div>
+               <img src="assets/ms-2.jpg" alt="">
+            </div>
+         </div>
       </div>
-           <div class="team-card">
-        <div class="team-card-img">
-          <img src="assets/team-4.webp" alt="Fin Heiber">
-        </div>
-        <h4>Fin Heiber</h4>
-        <p>Chef</p>
-        <ul class="team-connect">
-          <li>
-            <a href="https://www.linkedin.com" target="_blank">
-              <i class="fab fa-linkedin "></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/90xxxxxx" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com" target="_blank">
-              <i class="fab fa-twitter "></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-           <div class="team-card">
-        <div class="team-card-img">
-          <img src="assets/team-4.webp" alt="Fin Heiber">
-        </div>
-        <h4>Fin Heiber</h4>
-        <p>Chef</p>
-        <ul class="team-connect">
-          <li>
-            <a href="https://www.linkedin.com" target="_blank">
-              <i class="fab fa-linkedin "></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/90xxxxxx" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com" target="_blank">
-              <i class="fab fa-twitter "></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-           <div class="team-card">
-        <div class="team-card-img">
-          <img src="assets/team-4.webp" alt="Fin Heiber">
-        </div>
-        <h4>Fin Heiber</h4>
-        <p>Chef</p>
-        <ul class="team-connect">
-          <li>
-            <a href="https://www.linkedin.com" target="_blank">
-              <i class="fab fa-linkedin "></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/90xxxxxx" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com" target="_blank">
-              <i class="fab fa-twitter "></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-  
-
-          
-    </div>
+   </div>
+</section>
+<section class="favourite-coffee">
+   <div class="container">
+      <h1 class="favourite-coffee-title">
+         <span class="discover-special">Meet Our</span> <span class="discover-special-letter">Chefs</span>
+      </h1>
+   </div>
+</section>
+<section class="team">
+   <div class="container">
+      <div class="team-container">
+       <div class="team-card">
+  <div class="team-card-img">
+    <img src="assets/team-4.webp" alt="Fin Heiber">
   </div>
+  <h4>Fin Heiber</h4>
+  <p>Chef</p>
+  <ul class="team-connect">
+    <li>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/90xxxxxx" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="team-card">
+  <div class="team-card-img">
+    <img src="assets/team-2.webp" alt="Sarah Miles">
+  </div>
+  <h4>Sarah Miles</h4>
+  <p>Chef</p>
+  <ul class="team-connect">
+    <li>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/90xxxxxx" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="team-card">
+  <div class="team-card-img">
+    <img src="assets/team-3.webp" alt="James Porter">
+  </div>
+  <h4>James Porter</h4>
+  <p>Chef</p>
+  <ul class="team-connect">
+    <li>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/90xxxxxx" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="team-card">
+  <div class="team-card-img">
+    <img src="assets/team-1.webp" alt="Aylin Demir">
+  </div>
+  <h4>Aylin Demir</h4>
+  <p>Chef</p>
+  <ul class="team-connect">
+    <li>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/90xxxxxx" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+      </div>
+   </div>
 </section>
 
-       
+            <footer>
+            <div class="container">
+               <div class="footer-container">
+                  <div class="footer-info">
+                     <h3>Our Location</h3>
+                     <p>
+                        Collins Street West, Victoria 8007 Australia <br>
+                        E: contact@baresto.com <br> 
+                        T: (208) 333 9296 
+                     </p>
+                  </div>
+                  <div class="footer-logo">
+                     <a href="#home">
+                     <img src="assets/logo.png" alt="jaqesto-logo">
+                     </a>
+                  </div>
+                  <div class="footer-social">
+                     <h3>Follow Us</h3>
+                     <ul class="social-list">
+                        <li>
+                           <a href="#" aria-label="Instagram">
+                           <i class="fa-brands fa-instagram"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="Twitter">
+                           <i class="fa-brands fa-square-x-twitter"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="Google Plus">
+                           <i class="fa-brands fa-google-plus-g"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="LinkedIn">
+                           <i class="fa-brands fa-linkedin"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="footer-bottom-bar">
+                  <p>&copy; 2025 Jaqesto. All Rights Reserved.</p>
+               </div>
+            </div>
+         </footer>  
+
+    <script>
+       const feedbacks = document.querySelectorAll(".count-number");
+
+function raiseNumber(target, datafeed) {
+  let count = 0;
+  let speed = 50;
+  target = parseInt(target, 10);
+  let step = Math.ceil(target / 50);
+
+  function countup() {
+    count += step;
+    if (count > target) {
+      target > 100
+        ? (datafeed.textContent = `${target}+`)
+        : (datafeed.textContent = `${target}%`);
+    } else {
+      target > 100
+        ? (datafeed.textContent = `${count}+`)
+        : (datafeed.textContent = `${count}%`);
+      setTimeout(countup, speed);
+    }
+  }
+  countup();
+}
+
+function detectHeight(a) {
+  let current = window.innerHeight;
+  let rec = a.getBoundingClientRect();
+  return rec.top <= current;
+}
+
+window.addEventListener("scroll", () => {
+  feedbacks.forEach((feed) => {
+    if (detectHeight(feed) && !feed.classList.contains("test")) {
+      const feedValue = feed.getAttribute("data-number");
+      const datafeed = feed.querySelector("span");
+      raiseNumber(feedValue, datafeed);
+      feed.classList.add("test");
+    }
+  });
+});
+
+
+    </script>
+
 </body>
+
 </html>
