@@ -102,8 +102,6 @@
   align-items: center;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  width: 100vw;
-  height: 100vh;
   background: rgba(0,0,0,0.8);
   z-index: 9999;
   opacity: 0;
@@ -125,13 +123,14 @@ visibility: visible;
    flex-direction: column;
    max-width: 650px;
    width: 100%;
+   min-width: 0;
 }
 
 
 
 .carouselNumber{
    align-self: flex-end;
-   color: var(--body-font-color);
+   color: white;
 }
 
 
@@ -142,6 +141,9 @@ visibility: visible;
    outline: none;
    color: white;
    font-size: 2rem;
+   border:none;
+   cursor: pointer;
+
 
 }
 
@@ -175,6 +177,52 @@ visibility: visible;
      cursor: pointer;
    
 }
+
+
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 1.5rem 0.5rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .gallery-item img {
+    min-height: 160px;
+    border-radius: 14px;
+  }
+  .gallery-item span {
+    width: 38px;
+    height: 38px;
+    font-size: 0.9rem;
+    border-radius: 50%;
+  }
+  .carousel-content {
+    max-width: 95vw;
+    width: 95vw;
+    padding: 0.5rem;
+  }
+  #carouselImage {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  .close-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+    right: 8px;
+    top: 8px;
+  }
+  #prevBtn, #nextBtn {
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}
+
+
+
 
 
 
