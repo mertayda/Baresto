@@ -2,6 +2,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
       <title>Document</title>
       <link rel="stylesheet" href="style.css" />
       <link
@@ -17,6 +18,7 @@
          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sacramento&display=swap"
          rel="stylesheet"
          />
+         
    </head>
    <body>
       <header>
@@ -294,10 +296,10 @@
                </div>
             </div>
          </section>
-         <section class="favourite-coffee">
+         <section class="favourite-coffee" style="background-image: url(assets/bg-4.jpg);">
             <div class="container">
-               <h1 class="favourite-coffee-title">
-                  <span class="discover-special">Favorite</span> <span class="discover-special-letter">Coffee</span>
+               <h1 class="favourite-food-title">
+                  <span class="discover-special">Favorite</span> <span class="discover-special-letter">Foods</span>
                </h1>
             </div>
          </section>
@@ -398,30 +400,24 @@
                </div>
             </div>
             <div class="modal">
+                <button id="close-btn">&times;</button>
                <div class="modal-content">
-                  <button id="close-btn">&times;</button>
-                  <img id="modal-img" src="" alt="">
+                <img id="modal-img" src="" alt="">
                   <div class="caption">asdasdas</div>
                </div>
                <button id="previous">&#10094;</button>
                <button id="next">&#10095;</button>
             </div>
          </section>
-         <section class="favourite-coffee">
-            <div class="container">
-               <h1 class="favourite-coffee-title">
-                  <span class="discover-special">Favorite</span> <span class="discover-special-letter">Coffee</span>
-               </h1>
-            </div>
-         </section>
+      
          <section class="review">
             <div class="review-img-container">
                     <img class="review-img" src="assets/bg-side-1.jpg" alt="jaqesto-review-1">
             </div>
        
-            <div class="review-text">
+         
             <div class="container">
-            <div class="review-wrapper">
+                   <div class="review-wrapper">
                <div class="review-carousel">
                   <div class="review-slide">
                      <span class="review-title-1">Customer</span>
@@ -457,6 +453,8 @@
                   </div>
                </div>
             </div>
+            </div>
+        
          </section>
          <section class="call-us">
             <div class="container">
@@ -538,8 +536,17 @@
             </div>
          </footer>
       </main>
+
+        
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
       <script src="js/carousel.js"></script>
       <script src="js/review-carousel.js"></script>
       <script src="js/main.js"></script>
+
+
+ 
+
    </body>
 </html>

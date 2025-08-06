@@ -73,7 +73,7 @@ a {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 1rem;
-	font-size: 6rem;
+	
 }
 
 
@@ -181,6 +181,46 @@ nav {
 	/* Contact */
 	order: 7;
 }
+
+.nav-dropdown{
+	position: relative;
+}
+
+.dropdown-link{
+	position: relative;
+}
+
+.dropdown{
+ position: absolute;
+opacity: 0;
+visibility: hidden;
+display: flex  ;
+flex-direction: column;
+justify-content: center;
+padding: 1rem;
+gap: 5px;
+background-color: #000000;
+}
+
+.dropdown.active{
+	display: block;
+}
+
+.nav-dropdown:hover .dropdown{
+	opacity: 1;
+  visibility:visible;
+}
+
+.dropdown-item{
+	left: 0;
+}
+
+.dropdown-item:hover{
+	background-color: var(--secondary-color);
+	color: white;
+	padding: 0 0.5rem;
+}
+
 
 .logo {
 	display: none;
@@ -391,7 +431,7 @@ nav {
 .discover-special {
 	font-family: var(--deco-font-1);
 	color: var(--secondary-color);
-	font-size: 6rem;
+	font-size: clamp(2rem, 5vw, 6rem);
 	line-height: 0.7;
 	font-weight: var(--body-font-weight);
 	line-height: 0.2;
@@ -418,12 +458,15 @@ nav {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	align-items: center;
 	justify-content: center;
+	
 
 }
 
 .special-tastes-whole {
 	display: flex;
 	flex-direction: column;
+	  opacity: 0;
+  transform: translateX(100px);
 
 }
 
@@ -486,14 +529,33 @@ nav {
 }
 
 .favourite-coffee-title {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%); 
+  opacity: 0; 
 }
+
+
+.favourite-food-title {
+   position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-50%,50%);
+	left: 50%;
+	top: 50%;
+	opacity: 0;
+
+  
+}
+
+
+
 
 /*favourite-menu*/
 .favourite-menu {
@@ -516,6 +578,8 @@ nav {
 	color: white;
 	margin-left: 0;
 	margin-right: auto;
+	opacity: 0;
+	transform: translateX(-100px);
 }
 
 .favorite-title {
@@ -623,6 +687,8 @@ nav {
 	margin-left: auto;
 	margin-right: 0;
 	padding: 1rem;
+	
+	transform: translateX(100px);
 }
 
 .snacks-title {
@@ -747,10 +813,10 @@ nav {
 .modal {
 	display: none;
 	position: fixed;
-	width: 100%;
-	height: 100%;
 	top: 0;
 	left: 0;
+	right: 0;
+	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.85);
 	align-items: center;
 	justify-content: center;
@@ -770,15 +836,20 @@ nav {
 	padding: 1rem;
 	border-radius: 0.5rem;
 	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-	max-width: 90%;
-	width: 900px;
-	max-height: 90vh;
+	max-width: 100%;
+	 height: auto;
+}
+
+#modal-img{
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 #close-btn {
 	position: absolute;
-	top: -1rem;
-	right: -1rem;
+	top: 10px;
+	right: 10px;
 	border: none;
 	cursor: pointer;
 	display: flex;
@@ -852,15 +923,13 @@ nav {
 	object-fit: cover;
 }
 
-.review-text {
-	height: auto;
 
-}
 
 .review-wrapper {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	
 }
 
 .review-carousel {
@@ -884,6 +953,8 @@ nav {
 	align-items: center;
 	margin: 0 auto;
 	transition: all 0.3s ease;
+	  opacity: 0;
+  transform: translateX(100px); 
 }
 
 .review-slide p {
@@ -895,7 +966,7 @@ nav {
 .review-title-1 {
 	font-family: var(--deco-font-1);
 	color: var(--secondary-color);
-	font-size: 6rem;
+	font-size: clamp(2rem,4rem,6rem);
 	line-height: 0.7;
 	font-weight: var(--body-font-weight);
 	line-height: 0.2;
@@ -1026,6 +1097,9 @@ nav {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+    opacity: 0;                  
+    transform: translateY(50px);
+	
 }
 
 .footer-open-title {
@@ -1797,6 +1871,20 @@ textarea {
      }
 
 
+	 .favourite-about-title{
+		  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   top: 30%;
+ left: 50%;
+ transform:translate(-50%,50%)
+
+	 }
+
+
+
      .team{
       padding: 5rem 1rem;
      }
@@ -1923,13 +2011,24 @@ textarea {
 
 @media (max-width: 576px) {
 
+	.slide-content h1,.slide-content .taste{
+		font-size: 3rem;
+	}
+
+
 	#menu-4 {
 		grid-area: 1 / 1 / 1 / 1;
 	}
 
+	.about-img{
+		flex-direction: column;
+	}
+
+
 }
 
 @media (max-width: 768px) {
+
 
 	.coffee-menu-container {
 		width: auto !important;
@@ -1941,6 +2040,7 @@ textarea {
 		display: none;
 	}
 
+	
 
 	.our-story-wrapper {
 		flex-wrap: wrap;
@@ -1974,6 +2074,24 @@ textarea {
 	}
 
 
+ #previous, #next{
+	color: #000000;
+ }
+
+
+.close-btn{
+
+}
+
+#previous{
+	left: 15;
+}
+
+#next{
+	right: 0;
+}
+
+
  /* Blog */
 
  .blog-item{
@@ -1988,6 +2106,19 @@ textarea {
 
 
 }
+
+
+
+
+
+@media(max-width:991px) and (min-width:768px){
+	.slide-content h1,.slide-content .taste{
+		font-size: 4rem;
+	}
+	
+}
+
+
 
 @media (max-width: 991px) {
 	.navbar-container {
@@ -2085,10 +2216,7 @@ textarea {
 		flex-direction: column;
 	}
 
-	.discover-special,
-	.review-title-1 {
-		font-size: 4rem;
-	}
+
 
 
 	.footer-days {

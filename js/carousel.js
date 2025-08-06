@@ -1,4 +1,5 @@
 const allGalery = document.querySelectorAll(".showcase-products a")
+const modalContent = document.querySelector(".modal-content")
 const modal = document.querySelector(".modal");
 const modalImage = document.getElementById("modal-img");
 const caption = document.querySelector(".caption");
@@ -79,4 +80,8 @@ previous.addEventListener("click", previousButton)
 
 
 
-
+modal.addEventListener("click", (e) => {
+  if (e.target  === modal) {
+    modal.classList.remove("active");
+  }
+});
