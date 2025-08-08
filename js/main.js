@@ -6,11 +6,20 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const hamburgerBtn = document.querySelector(".hamburger-menu-button")
 const navMenu = document.querySelector(".nav-menu-mobile");
+const mobileDropdown = document.querySelector(".dropdown-mobile")
+const mobileDropDownLink = document.querySelector(".mobile-dropdown")
+
 
 let currentIndex = 0;
 let totalIndex = slides.length
 
 let slideTimer;
+
+
+
+hamburgerBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+})
 
 
 
@@ -71,9 +80,6 @@ autoSlide()
 
 
 
-hamburgerBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-})
 
 
 

@@ -35,8 +35,8 @@
       </style>
    </head>
 <body>
- <header>
-                 <div class="container">
+  <header>
+         <div class="container">
             <nav>
                <div class="navbar-container">
                   <div class="logo">
@@ -54,7 +54,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                      </li>
                      <li class="logo-item">
-                        <img src="assets/logo.png" alt="jaqesto-logo"  />
+                        <img src="assets/logo.png" alt="jaqesto-logo" />
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="menu.html">Menu</a>
@@ -62,8 +62,18 @@
                      <li class="nav-item">
                         <a class="nav-link" href="booking.html">Booking</a>
                      </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                     <li class="nav-item  nav-dropdown">
+                           <a  id="dropdown-link" class="nav-link" href="about.html">About</a>
+                           <div class="dropdown-bridge"></div>
+                               <ul class="dropdown">
+                              <li class="dropdown-item">
+                                 <a class="nav-link" href="gallery.html">Gallery</a>
+                              </li>
+                              <li class="dropdown-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                              </li>
+                        
+                       </ul>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
@@ -95,15 +105,15 @@
                   </ul>
                </div>
             </nav>
-           <div class="breadcrums-container">
+            <div class="breadcrums-container">
                <h1 class="discover-special">Latest</h1>
-              <span>Blog</span>
-              <div class="breadcrums">
+               <span>Blog</span>
+               <div class="breadcrums">
                   <span >Home</span>  <span>/</span> <span> Blog</span>
-              </div>
-           </div>
+               </div>
+            </div>
          </div>
-       </header>
+      </header>
         <section class="blog">
             <div class="container">
                 <div class="blog-container">
@@ -223,6 +233,14 @@
             </div>
          </footer>
 
-       <script src="js/main.js"></script>
+       <script >
+
+                 const hamburgerBtn = document.querySelector(".hamburger-menu-button")
+         const navMenu = document.querySelector(".nav-menu-mobile");
+
+         hamburgerBtn.addEventListener("click", () => {
+         navMenu.classList.toggle("active");
+})
+       </script>
 </body>
 </html>

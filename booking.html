@@ -101,9 +101,10 @@ form, .date-form > div, .details-input, textarea {
                      </li>
                      <li class="nav-item  nav-dropdown">
                            <a  id="dropdown-link" class="nav-link" href="about.html">About</a>
-                       <ul class="dropdown">
+                           <div class="dropdown-bridge"></div>
+                               <ul class="dropdown">
                               <li class="dropdown-item">
-                                 <a class="nav-link" href="about.html">Gallery</a>
+                                 <a class="nav-link" href="gallery.html">Gallery</a>
                               </li>
                               <li class="dropdown-item">
                                     <a class="nav-link" href="about.html">About</a>
@@ -121,22 +122,22 @@ form, .date-form > div, .details-input, textarea {
                   <!--Hamburger menu icon for mobile view */-->
                   <ul class="nav-menu-mobile">
                      <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="">Home</a>
+                        <a class="nav-link-mobile" href="index.html">Home</a>
                      </li>
                      <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="">Menu</a>
+                        <a class="nav-link-mobile" href="menu.html">Menu</a>
                      </li>
                      <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="">Booking</a>
+                        <a class="nav-link-mobile" href="booking.html">Booking</a>
                      </li>
                      <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="">About</a>
+                        <a class="nav-link-mobile" href="about.html">About</a>
                      </li>
                      <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="">Blog</a>
+                        <a class="nav-link-mobile" href="blog.html">Blog</a>
                      </li>
                      <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="">Contact</a>
+                        <a class="nav-link-mobile" href="contact.html">Contact</a>
                      </li>
                   </ul>
                </div>
@@ -262,6 +263,16 @@ form, .date-form > div, .details-input, textarea {
             </div>
              
          </div>
+      <script>
+         const hamburgerBtn = document.querySelector(".hamburger-menu-button")
+         const navMenu = document.querySelector(".nav-menu-mobile");
+
+         hamburgerBtn.addEventListener("click", () => {
+         navMenu.classList.toggle("active");
+})
+
+      </script>
      <script src="js/formValidation.js"></script>
+   
    </body>
 </html>
