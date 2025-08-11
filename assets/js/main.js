@@ -6,8 +6,24 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const hamburgerBtn = document.querySelector(".hamburger-menu-button")
 const navMenu = document.querySelector(".nav-menu-mobile");
-const mobileDropdown = document.querySelector(".dropdown-mobile")
-const mobileDropDownLink = document.querySelector(".mobile-dropdown")
+
+const  dpMobile = document.querySelector(".dropdown-mobile-link")
+const  dpContent = document.querySelector(".mobile-dropdown")
+const arrow = document.querySelector(".arrow")
+
+
+dpMobile.addEventListener("click", function() {
+
+         this.classList.toggle("is-open")
+          dpContent.classList.toggle("showup")
+         
+   
+})
+
+hamburgerBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+})
+
 
 
 let currentIndex = 0;
@@ -17,9 +33,6 @@ let slideTimer;
 
 
 
-hamburgerBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-})
 
 
 

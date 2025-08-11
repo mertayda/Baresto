@@ -93,9 +93,18 @@
                      <li class="nav-item-mobile">
                         <a class="nav-link-mobile" href="booking.html">Booking</a>
                      </li>
-                     <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="about.html">About</a>
+                         <li class="nav-item-mobile dropdown-mobile">
+                      <a class="nav-link-mobile  dropdown-mobile-link" href="#">
+                        About <span class="arrow">▶</span>  </a>
+                     <ul class="mobile-dropdown">
+                        <li class="mobile-l-dropdown">
+                        <a class="mobile-d-link" href="about.html">About</a>
                      </li>
+                  <li class="mobile-l-dropdown">
+                  <a class="mobile-d-link" href="gallery.html">Gallery</a>
+                     </li>
+                     </ul>
+                   </li>
                      <li class="nav-item-mobile">
                         <a class="nav-link-mobile" href="blog.html">Blog</a>
                      </li>
@@ -240,7 +249,9 @@
 
          hamburgerBtn.addEventListener("click", () => {
          navMenu.classList.toggle("active");
+         
 })
        </script>
+       <script src="js/main.js"></script>
 </body>
 </html>
