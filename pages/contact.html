@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-         <link rel="stylesheet" href="style.css" />
+         <link rel="stylesheet" href="/assets/css/style.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -23,7 +23,7 @@
 }
  header{
      position: relative !important;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(assets/bg-8.jpg);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/assets/images/bg-8.jpg);
      background-repeat: no-repeat;
      background-position: center;
      height: 50vh;
@@ -212,64 +212,7 @@
 <body>
           <header>
          <div class="container">
-            <nav>
-               <div class="navbar-container">
-                  <div class="logo">
-                     <img src="assets/logo.png" alt="jaqesto-logo" />
-                  </div>
-                  <button
-                     class="hamburger-menu-button"
-                     aria-label="Menüyü aç/kapat"
-                     aria-expanded="false"
-                     >
-                  &#9776;
-                  </button>
-                  <ul class="nav-menu">
-                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                     </li>
-                     <li class="logo-item">
-                        <img src="assets/logo.png" alt="jaqesto-logo" />
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="booking.html">Booking</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                     </li>
-                  </ul>
-                  <!--Hamburger menu icon for mobile view */-->
-                  <ul class="nav-menu-mobile">
-                     <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="menu.html">Menu</a>
-                     </li>
-                     <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="booking.html">Booking</a>
-                     </li>
-                     <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="about.html">About</a>
-                     </li>
-                     <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item-mobile">
-                        <a class="nav-link-mobile" href="contact.html">Contact</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
+               <div data-get="/assets/partials/navbar.html"></div>
              <div class="breadcrums-container">
                <h1 class="discover-special">Get In</h1>
                <span>Touch</span>
@@ -318,53 +261,7 @@
                </div>  
             </div>
              </section>
-        <footer>
-            <div class="container">
-               <div class="footer-container">
-                  <div class="footer-info">
-                     <h3>Our Location</h3>
-                     <p>
-                        Collins Street West, Victoria 8007 Australia <br>
-                        E: contact@baresto.com <br> 
-                        T: (208) 333 9296 
-                     </p>
-                  </div>
-                  <div class="footer-logo">
-                     <a href="#home">
-                     <img src="assets/logo.png" alt="jaqesto-logo">
-                     </a>
-                  </div>
-                  <div class="footer-social">
-                     <h3>Follow Us</h3>
-                     <ul class="social-list">
-                        <li>
-                           <a href="#" aria-label="Instagram">
-                           <i class="fa-brands fa-instagram"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" aria-label="Twitter">
-                           <i class="fa-brands fa-square-x-twitter"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" aria-label="Google Plus">
-                           <i class="fa-brands fa-google-plus-g"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" aria-label="LinkedIn">
-                           <i class="fa-brands fa-linkedin"></i>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="footer-bottom-bar">
-                  <p>&copy; 2025 Jaqesto. All Rights Reserved.</p>
-               </div>
-            </div>
-         </footer>
+         <footer data-get="/assets/partials/footer.html"></footer>      
     <div class="success-card">
             <div>
                  <button class="close-btn">
@@ -538,7 +435,7 @@ function phoneValidation(InputId){
 
      
   </script>
-
+ <script src="/assets/js/main.js"></script>
 
    
 
